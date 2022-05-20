@@ -1,0 +1,91 @@
+* {
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+.con {
+  padding: 0 !important;
+}
+
+.main-section-container {
+  transform: translatey(30%);
+}
+.card-body {
+  /* border: solid black 2px; */
+  padding: 8% 3%;
+}
+.row {
+  display: flex; /* equal height of the children */
+}
+
+.col {
+  flex: 1; /* additionally, equal width */
+  border: solid #007b83;
+}
+.col:nth-of-type(1) {
+  background-color: #007b83;
+  border-radius: 10px 0 0 10px;
+  color: white;
+  font-size: 1.8rem;
+}
+.col:nth-of-type(2) {
+  border-radius: 0 10px 10px 0;
+}
+
+.convertBtn {
+  color: black;
+  min-width: 10px;
+  border: solid 2px #007b83;
+}
+
+.convertBtn:hover {
+  color: white;
+  transition: 0.5s;
+  background-color: #007b83;
+}
+
+#resultValueSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 500px;
+  height: 200px;
+  word-wrap: normal;
+  text-align: center;
+  font-size-adjust: 0.58;
+}
+
+#convertedDegree {
+  font-size: 65px;
+  font-weight: 500;
+  max-width: 500px;
+}
+
+#convertedUnit,
+#degree {
+  padding-bottom: 50px;
+}
+
+.resultSection {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+label {
+  font-size: 1.03rem;
+  font-weight: bold;
+}
+
+.card-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.form-control:focus {
+  border-color: rgba(100, 100, 100, 1) !important;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+}
